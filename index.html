@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
+                
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-transform:uppercase;
+            text-decoration: none;
+            font-family: 'gilroy-bold', sans-serif;             
+        }
+        .wrap {
+            background: url(slate-texture-background.jpg) center center no-repeat;
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+        }
+        li a {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #000;
+            width: 100%;
+            height: 100%;
+        }
+        h2 {
+            color: #ffc800;
+            font-size: 4rem;
+        }
+        ul {
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+        li {
+            background-color: rgba(255,255,255, 0.7);
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            -webkit-transition: 0.2s ease-out;
+            -moz-transition: 0.2s ease-out;
+            -o-transition: 0.2s ease-out;
+            transition: 0.2s ease-out;
+        }
+        li:hover a {
+            color: #fff;
+        }
+        li:hover {
+            transform : translateY(-10px);
+            background-color: #ffc800;
+
+        }
+
+        @media only screen and (max-width: 400px) {
+            .wrap {width: 100%;background-size:cover; overflow:hidden;}
+            ul { width:80%; height:auto;}
+            h2{font-size: 2.5rem;}
+            li { width: 70%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h2>ORDER HERE</h2>
+        <ul>
+            <li><a href="https://www.clover.com/online-ordering/hankki17th">17th Ave</a></li>
+            <li><a href="https://www.clover.com/online-ordering/hankki-cfm-calgary">Calgary Farmer's Market</a></li>
+            <li><a href="https://www.clover.com/online-ordering/hankki-banff-banff">Banff</a></li>
+            <li><a href="https://www.clover.com/online-ordering/hankkilethbridge-lethbridge">Lethbridge</a></li>
+            <li><a href="https://www.clover.com/online-ordering/hankki-85st-calgary">West 85th</a></li>
+        </ul>
+    </div>
+</body>
+</html>
